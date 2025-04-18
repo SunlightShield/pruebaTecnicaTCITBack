@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Delete, Body, Param } from '@nestjs/common';
 import { PostsService } from './posts.service';
 
-@Controller('posts') // <- ¡esto define la ruta base!
+@Controller('posts')
 export class PostsController {
   constructor(private readonly postsService: PostsService) {}
 
